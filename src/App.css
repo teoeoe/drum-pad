@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap');
+*{
+    font-family: 'Azeret Mono', monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    background-color: #d9ffd8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.drum-setup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    padding: 30px;
+    border-radius: 5px;
+    border: 2px white solid;
+    box-shadow: 0px 6px 6px 2px rgba(0,0,0,0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#display{
+    height: 20px;
+    overflow: hidden;
+    width: 100px;
+    padding:10px;
+    border-radius: 5px;
+    background-color: #2b90f5;
+    border: 2px white solid;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+#right-side{
+    display: flex;
+    flex-direction: column;
+    gap:5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#turn-on-off{
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
+
+#turn-on-off button{
+    border:none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 2px 2px 2px black;
+    border: 2px white solid;
+    color:white;
+}
+
+#turn-on-off button:hover{
+    background-color: white;
+    color: grey;
+}
+
+.red{
+    background-color: tomato;
+}
+
+.green{
+    background-color: turquoise;
+}
+
